@@ -1,0 +1,226 @@
+header{
+    
+    padding-top: 0%;
+}
+
+body{
+    padding-top: 0px;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+h1{
+    display: inline;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: darkred;
+  }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: darkred;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  display: inline;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none; 
+
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 40px;
+  text-decoration: none; 
+
+  /*border-left: 1px solid #bbb;*/
+  
+
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none; 
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    display: block;
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+    max-height: 200px;
+    overflow: hidden;
+
+
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.5;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+  
+footer{
+    background-color: #161616;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 0px;
+    color: white;  
+}
+
+hr{
+    width: 100%;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+
+.name-email{
+
+    float: inline;
+   
+}
+
+.col-sm-6{
+    display: inline-block;
+}
+
+.foot-heading{
+    text-align: left;
+    color: aliceblue;
+}
+
+.footnote{
+    display: inline-block;
+    
+}
+
+h5{
+    text-align: center;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 20px;
+
+}
+
+body{
+    padding-top: 50px;
+
+}

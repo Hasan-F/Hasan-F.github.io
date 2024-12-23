@@ -1,0 +1,425 @@
+header{
+    
+    padding-top: 0%;
+}
+
+body{
+    padding-top: 0px;
+    margin: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+h1{
+    display: inline;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: darkred;
+  }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: darkred;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  display: inline;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none; 
+
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 40px;
+    text-decoration: none; 
+
+    /*border-left: 1px solid #bbb;*/
+    
+
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none; 
+}
+
+
+#contact{
+    
+}
+
+main{
+    padding-top: 50px;
+    background-color: aliceblue;
+
+}
+
+
+
+.coverpage{
+    background-image: url('circleheart.jpg');
+    background-repeat: no-repeat;
+    float: right;
+    
+    width: 100%;
+    height: 700px;
+    background-size: 100% 100%;
+}
+
+.overlap{
+    padding: 350px;
+    background-color: firebrick;
+    opacity: 0.85;
+}
+
+#news {
+
+    margin: 60px 0px;
+    padding: 50px;
+    background-color: #494a4a;        
+}
+    
+/* Container styles */
+.scrolling-text-container {
+    margin: 75px 0;
+    padding: 20px 0;
+    background-color: rgb(120, 196, 234);
+    border-radius: 4px;
+    overflow: hidden;
+    
+}
+
+/* Inner container styles */
+.scrolling-text-inner {
+    /* display: flex;*/
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+    
+}
+
+/* Text styles */
+.scrolling-text {
+    /* display: flex;*/
+    
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+    text-align: center;
+
+}
+
+/* Apply the animation to the text items */
+.scrolling-text-inner{
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* Pause the animation when a user hovers over it */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+@keyframes scroll-up {
+    0% {
+        transform: translateY(120%);
+    }
+
+    100% {
+        transform: translateY(-120%);
+    }
+}
+
+@keyframes scroll-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.logoprint{
+    z-index: 3;
+    position: absolute;
+    top: 20%;
+    padding-left: 10%;
+    padding: 3% 7% 5% 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: aliceblue;
+}
+
+
+
+.eyecatcher{
+    
+    background-color: rgb(178, 178, 178);
+    position: relative;
+
+}
+/*.ec-overlap{
+    background-image: url('stripe-bg.jpg');
+    opacity: 0.98;    
+    width: 100%;
+    
+
+}*/
+
+.textcatch{
+
+    z-index: 3;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+
+}
+
+.piccatch{
+    background-image: url('renaissance-banquet-hall-crystal-ballroom.jpg');
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    width: 33%;
+    height: 450px;
+    background-size: 100% 100%;
+    
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    border-radius: 5%;
+    
+}
+
+h3{
+    color: firebrick;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 40px;
+    text-align: center;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+h4{
+    color: rgb(34, 110, 241);
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+
+h5{
+    text-align: center;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 20px;
+
+}
+
+footer{
+    background-color: #161616;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 0px;
+    color: white;  
+}
+
+hr{
+    width: 100%;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+
+.name-email{
+
+    float: inline;
+   
+}
+
+.col-sm-6{
+    display: inline-block;
+}
+
+.foot-heading{
+    text-align: left;
+    color: aliceblue;
+}
+
+.footnote{
+    display: inline-block;
+    
+}
+/*****************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************************************************************************/
+
+.news-box {
+    background: #fff;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 6px 0 rgba(142, 141, 141, 0.3);
+    box-shadow: 0 2px 6px 0 rgba(142, 141, 141, 0.3);
+}
+.news-box--margin {
+    margin-bottom: 0;
+}
+.news-title{
+    padding: 10px 15px;
+}
+.news-img img{
+    display: block;
+    /*max-width: 100%;*/
+    height: 100%;
+}
+.news-box:hover {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*----------event card---------*/
+
+
+
+
+
+
+/***************** Carousel CSS **************/
+.margin-t70 {
+    margin-top:70px;
+}
+.item img {
+    width:100%;
+    max-height:450px;
+    display: block;
+}
+
+
+/* Button */
+
+
+
+/*.home-modal1 .modal-dialog {
+    width: 600px;
+    margin: 92px auto;
+}*/
+
+/*---------owl carousel----------*/
+
+
+/*Ameen code for inline gallery*/
+
+
+
+
+/*.media-btn div.col-md-12 {
+    padding: 0;
+    text-align: center;
+}
+.media-btn div.col-md-12 a {
+    width: 50%;
+}*/
+.media-btn .col-12 {
+    text-align: center;
+}
+.media-btn button {
+    background: #d0424e;
+    border-color: #d0424e;
+}
+
+/***** MEDIA QUERIES *****/
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+
+
+
+
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0)
+}
+
+
+
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-touch-callout: none
+}
+
+/**************************************************************************/
+
+
+.aboutus{
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+

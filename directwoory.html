@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="drt.css"> <!-- Optional: Link to CSS file -->
+    <script src="drt.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li style="display: block; color: white; text-align: center; padding: 25px 40px; text-decoration: none; ">Carelick</li>
+            <li style="padding-left: 52.1%;"><a href="html file.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="eventshtml.html">EVENTS</a></li>
+            <li><a href="eventpage.html">DONATION</a></li>
+            <li><a href="directory.html">BRANCHES</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container directory_search">
+        <div class="row directory-row">
+                <div class="col-md-12">
+                    <h3 class="page-title" style="margin-bottom: 5px;">Directory Search <small>Search our registered members</small></h3>
+                        <div id="error" style="color: red">* Fill any of the field</div>
+                    <form id="searchForm" method="POST">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <span>Name</span>
+                            <div class="form-group">
+                                <input type="text" name="member_id" id="memberNameById" value="" hidden="">
+                                <input type="text" name="member_name" placeholder="Name" id="memberNameId" onclick="show_sugg_li()" value="" onkeyup="searchSuggestionName(this.value);" class="member_name form-control focus" autocomplete="off">
+                                <ul id="myUL" class="myUL" style="display: none;"></ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <span>City</span>
+                            <div class="form-group">
+                                <input type="text" name="member_city" value="" placeholder="City" class="member_city form-control focus">
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <span>State</span>
+                            <div class="form-group">
+                                <input type="text" name="member_state" value="" placeholder="State" class="member_state form-control focus">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <span>Country</span>
+                            <div class="form-group">
+                                <input type="text" name="member_country" value="" placeholder="Country" class=" member_country form-control focus">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <span>Select Profession </span>
+                            <div class="form-group">
+                                <div class="wrap-select">
+                                    <div id="dd5" class="wrapper-dropdown-3 dir-search-list">
+                                        <input type="text" name="member_profession" placeholder="Name" class="member_profession" hidden="">
+                                        <span>Select Profession </span>                                                <ul class="dropdown">
+                                            <li><a href="javascript:void(0)" onclick="">Select Profession</a></li>
+
+                                            <li><a href="javascript:void(0)" onclick="set_member_profession(1);">Accountant</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(31);">Agriculture</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(2);">Banking</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(3);">Business</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(36);">Cbn</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(4);">Dentist</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(5);">Doctor(MD)</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(6);">Doctor(PhD)</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(7);">DSP</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(24);">Engineer</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(8);">Health Care</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(35);">Home Maker</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(9);">Housewife</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(10);">Insurance</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(11);">IT</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(12);">Journalist</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(32);">Laboratory Officer ( Quality Management) </a></li><li><a href="javascript:void(0)" onclick="set_member_profession(13);">Lawyer</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(14);">Librarian</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(15);">Management</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(25);">Other</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(16);">Owner/Principal</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(17);">Pharmacist</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(28);">Pharmest</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(18);">Physician</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(29);">Professor</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(33);">Quality Lead</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(19);">Realtor</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(34);">Retired</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(20);">Student</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(21);">Surgeon</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(22);">Teacher</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(23);">Technician</a></li><li><a href="javascript:void(0)" onclick="set_member_profession(30);">Trading And Sales Head </a></li><li><a href="javascript:void(0)" onclick="set_member_profession(37);">Working In Ksa As A Sales Head</a></li>                                                </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <input type="checkbox" name="family_included" class="family_included" value="1" id="includeMembers"> <label for="includeMembers" style="font-weight: 500;"> Include Family Members</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3" style="padding-top: 8px;">
+                            <div class="form-group"><!--onclick="search_now();"-->
+                                <button type="button" onclick="searchNow(1);" class="btn btn-primary submit-0btn search_now_button" style="padding: 7px 25px;" value="Search"><i class="fa fa-search"></i> Search <span class="search_now_fa_spin_icon"></span></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    </form>
+                </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                <div class="col-md-2">
+                <h3 class="page-title">Search Result</h3>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control" name="showLimits" id="showLimits" onchange="searchNow(1)">
+                        <option value="10">10 Per Page</option>
+                        <option value="20">20 Per Page</option>
+                        <option value="50">50 Per Page</option>
+                        <option value="100">100 Per Page</option>
+                        <option value="150">150 Per Page</option>
+                        <option value="200">200 Per Page</option>
+                        <option value="250">250 Per Page</option>
+
+                    </select>
+                </div>
+                </div>
+                <div class="col-md-12">
+
+                    <div class="col-md-12 col-sm-12 result-box">
+
+                        <div class="user-data-table" style="margin-bottom: 80px">
+                            <table class="table table_color table-striped table-condensed ">
+                                <thead>
+                                <tr class="tr_colors">
+                                    <th width="20%"><span>Name</span></th>
+                                    <th width="15%"><span>City</span></th>
+                                    <th width="20%"><span>State</span></th>
+                                    <th width="20%"><span>Country</span></th>
+                                    <th width="5%" style="height: 44px;"><span>Email</span></th>
+                                </tr>
+                                </thead>
+                                <tbody class="tbodyScroll show_all_members"></tbody>
+                            </table>
+                            <div id="pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    </body>
+</html>

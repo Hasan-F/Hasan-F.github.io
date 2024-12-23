@@ -1,0 +1,35 @@
+layout/design improvements
+
+fix footer
+
+
+
+simplify admin access (events image upload and news updating)
+
+
+
+add additional items to login
+change database to include additional login items
+
+add profile page when logged in
+
+
+
+program directory search
+
+
+
+
+
+biometrics
+sms - 2fa
+alt0
+outsource all security
+
+oidc
+open id connect
+
+
+smtp@gmail.com
+
+try and catch
